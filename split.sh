@@ -48,7 +48,7 @@ if [[ -d $1 ]]; then
   directory=$1
   echo "Splitting each file in $directory"
   cd "$directory"
-  for file in *.MP4; do
+  for file in *.[mM][pP]4; do
     split "$file"
   done
 elif [[ -f $1 ]]; then
